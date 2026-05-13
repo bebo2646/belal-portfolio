@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belal Ahmed - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-print-color-adjust: exact;
+        }
+        .font-display { font-family: 'Space Grotesk', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        @media print {
+            body { background-color: #ffffff; color: #000000; }
+            .glass { border-color: #eeeeee; background: #fafafa; }
+            .text-brand-yellow { color: #888800; }
+            .bg-brand-yellow { background-color: #ffff00; }
+            .no-print { display: none; }
+        }
+        .text-brand-yellow { color: #F0FF42; }
+        .bg-brand-yellow { background-color: #F0FF42; }
+    </style>
+</head>
+<body class="p-4 md:p-10 max-w-4xl mx-auto">
+
+    <div class="no-print mb-8 flex justify-end">
+        <button onclick="window.print()" class="px-6 py-2 bg-brand-yellow text-black font-bold rounded-full hover:opacity-90 transition-all">
+            Print to PDF
+        </button>
+    </div>
+
+    <header class="flex flex-col md:flex-row justify-between items-center gap-8 mb-16 border-b border-white/10 pb-12">
+        <div class="space-y-4 text-center md:text-left">
+            <h1 class="text-5xl md:text-6xl font-display font-black tracking-tighter uppercase">
+                BELAL <span class="text-brand-yellow">AHMED</span>
+            </h1>
+            <p class="text-xl text-white/40 font-light tracking-widest uppercase">Frontend Developer</p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-white/60">
+                <span class="flex items-center gap-2">belal@gmail.com</span>
+                <span class="flex items-center gap-2">+20 115 197 0493</span>
+                <span class="flex items-center gap-2">Cairo, Egypt</span>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="absolute inset-0 bg-brand-yellow/20 blur-2xl rounded-full"></div>
+            <img src="/imgs/Belal.jpg" alt="Belal Ahmed" class="relative size-32 md:size-40 rounded-full object-cover border-4 border-white shadow-2xl grayscale">
+        </div>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        <!-- Sidebar -->
+        <div class="space-y-12">
+            <section>
+                <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-brand-yellow mb-6">Expertise</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 glass rounded-md text-[10px] font-bold uppercase tracking-wider">React.js</span>
+                    <span class="px-3 py-1 glass rounded-md text-[10px] font-bold uppercase tracking-wider">Next.js</span>
+                    <span class="px-3 py-1 glass rounded-md text-[10px] font-bold uppercase tracking-wider">TypeScript</span>
+                    <span class="px-3 py-1 glass rounded-md text-[10px] font-bold uppercase tracking-wider">Tailwind CSS</span>
+                    <span class="px-3 py-1 glass rounded-md text-[10px] font-bold uppercase tracking-wider">Flutter</span>
+                    <span class="px-3 py-1 glass rounded-md text-[10px] font-bold uppercase tracking-wider">Dart</span>
+                    <span class="px-3 py-1 glass rounded-md text-[10px] font-bold uppercase tracking-wider">JavaScript</span>
+                    <span class="px-3 py-1 glass rounded-md text-[10px] font-bold uppercase tracking-wider">HTML/CSS</span>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-brand-yellow mb-6">Social</h2>
+                <div class="space-y-3 text-sm text-white/60">
+                    <p>Github: github.com/bebo2646</p>
+                    <p>LinkedIn: linkedin.com/in/belal-ahmed</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Main Content -->
+        <div class="md:col-span-2 space-y-12">
+            <section>
+                <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-brand-yellow mb-6">Profile</h2>
+                <p class="text-white/60 leading-relaxed">
+                    Creative Frontend Developer dedicated to building immersive, high-performance, and visually stunning web applications. Expert in modern React frameworks and mobile development with Flutter.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-brand-yellow mb-6">Featured Projects</h2>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 uppercase">Learning Hub</h3>
+                        <p class="text-sm text-white/40 mb-3">Educational platform for courses and learning materials.</p>
+                        <p class="text-xs text-brand-yellow/60">React • Tailwind • JavaScript</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 uppercase">Food Point Restaurant</h3>
+                        <p class="text-sm text-white/40 mb-3">Modern restaurant web app with smooth UI/UX.</p>
+                        <p class="text-xs text-brand-yellow/60">Next.js • Tailwind • TypeScript</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-brand-yellow mb-6">Education & Growth</h2>
+                <p class="text-white/60 leading-relaxed">
+                    Continuous learner in the ever-evolving world of Frontend Engineering, with a focus on cinematic motion and performant interfaces.
+                </p>
+            </section>
+        </div>
+
+    </div>
+
+    <footer class="mt-20 pt-8 border-t border-white/10 text-center">
+        <p class="text-[10px] tracking-widest uppercase text-white/20">Generated from Portfolio Portfolio • 2024</p>
+    </footer>
+
+</body>
+</html>
